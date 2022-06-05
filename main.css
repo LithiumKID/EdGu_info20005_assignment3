@@ -11,7 +11,7 @@ body {
   }
   
   .body {
-    height: 500vh;
+    height: 278vh;
     margin-bottom: 0px;
     padding-bottom: 0px;
     background-color: #0e0e0e;
@@ -66,6 +66,10 @@ body {
     height: 90%;
     cursor: pointer;
     }
+
+  .bannersec {
+      height: 40vh;
+  }
 
   .banner {
     width: 1452px;
@@ -228,4 +232,185 @@ body {
     font-family: Garamond;
     font-size: 18px;
   }
+
+  .functionmenusec {
+    position: relative;
+    height: 8vh;
+  }
+
+  .functionmenu {
+    position: absolute;
+    left: auto;
+    top: 0%;
+    bottom: 0%;
+    right: 0%;
+    width: 25vw;
+  }
   
+  .sortdropdown {
+    position: absolute;
+    left: 25%;
+    top: 14%;
+    right: 0%;
+    bottom: 0%;
+  }
+
+  .sortdiv {
+    padding: 0px;
+  }
+
+  #Compare {
+    position: absolute;
+    left: 45%;
+    top: 15%;
+    right: 0%;
+    bottom: 0%;
+  }
+   
+  #Grid {
+    position: absolute;
+    left: 67%;
+    top: 16%;
+    right: 0%;
+    bottom: 0%;
+  }
+
+  #List {
+    position: absolute;
+    left: 86%;
+    right: 0%;
+    bottom: 0%;
+    top: 17%;
+  }
+      
+  .productsec  {
+    height: 160vh;
+  }
+ 
+  .bottomsec {
+    position: relative;
+    height: 60vh;
+  }
+
+  #map {
+    position: relative;
+    left: -30%;
+    top: 19%;
+    right: 0%;
+    bottom: 0%;
+    width: 20vw;
+    height: 300px;
+    min-width: 250px;
+    margin-left: auto;
+    border: 5px solid #d7ca89;
+    border-radius: 20px;
+  }
+
+  #bottomlogo  {
+    position: relative;
+    left: 5%;
+    top: -42%
+  }
+
+  .bottomcolumn {
+    display: flex;
+    position: relative;
+    left: 6%;
+    top: -55%;
+    width: 30vw;
+  }
+
+  .bottomcolumnleft {
+    position: relative;
+    display: block;
+    left: 0%;
+    height: 20vh;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .bottomcolumnright {
+    left: 20%;
+    height: 20vh;
+  }
+
+  .bottomcolumn-heading {
+    position: relative;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: auto;
+    font-family: Garamond;
+    color: #d7ca89;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  #facebook {
+    position: relative;
+    left: 25%;
+    top: -3%;
+  }
+
+  #twitter {
+    position: relative;
+    left: -15%;
+    top: 42%;
+}
+
+  #bottomcolumn-text {
+    font-family: Garamond;
+    color: #d7ca89;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    text-decoration: underline;  
+    position: relative;
+    left: 4%;
+    top: 0%;
+    width: 12vw;
+    height: 15vh;
+
+  }
+
+  #bottom-info {
+    position: absolute;
+    left: auto;
+    top: 20%;
+    right: 4%;
+    bottom: 0%;
+    width: 20vw;
+    height: 35vh;
+  }
+
+  #timetable {
+    font-family: Garamond;
+    color: #d7ca89;
+    line-height: 28px;
+    letter-spacing: 2px;
+    text-align-last: justify;
+    position: absolute;
+    right: 0%;
+    left: 75.8%;
+    top: 42%;
+    bottom: 0%;
+    height: 25vh;
+    width: 18vw;
+  }
+
+  #address {
+    font-family: Garamond;
+    color: #d7ca89;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: left;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: auto;
+    height: 10vh;
+  }
+
