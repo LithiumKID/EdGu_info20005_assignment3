@@ -11,7 +11,7 @@ body {
   }
   
   .body {
-    height: 278vh;
+    height: 308vh;
     margin-bottom: 0px;
     padding-bottom: 0px;
     background-color: #0e0e0e;
@@ -111,9 +111,7 @@ body {
     bottom: auto;
     padding-left: 11px;
     height: 4vh;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #d7ca89;
+    border: 2px solid #d7ca89;
     border-radius: 20px;
     background-color: transparent;
     color: white;
@@ -150,16 +148,13 @@ body {
 
   #BodyType {
     position: relative;
-    left: 27vw;
-    right: 0%;
+    left: 26.4vw;
     top: auto;
     bottom: auto;
     height: 4vh;
     max-width: 19vw;
     min-width: 17vw;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #d7ca89;
+    border: 2px solid #d7ca89;
     border-radius: 20px;
     background-color: transparent;
   }
@@ -192,16 +187,14 @@ body {
 
   #Make {
     position: relative;
-    left: 6vw;
+    left: 5.8vw;
     right: 0%;
     top: auto;
     bottom: auto;
     height: 4vh;
     max-width: 19vw;
     min-width: 17vw;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #d7ca89;
+    border: 2px solid #d7ca89;
     border-radius: 20px;
     background-color: transparent;
   }
@@ -213,15 +206,17 @@ body {
     top: auto;
     bottom: auto;
     height: 4vh;
-    max-width:7vw;
-    min-width: 7vw;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #d7ca89;
+    width: 7vw;
+    border: 2px solid #d7ca89;
     border-radius: 20px;
     background-color: transparent;
+    cursor: pointer;
   }
   
+  #SearchButton:hover {
+    background-color: #d7ca89;
+  }
+
   .categorysearchtext-search {
     position: relative;
     left: 1.85vw;
@@ -246,30 +241,27 @@ body {
     width: 25vw;
   }
   
-  .sortdropdown {
+  #Sort {
     position: absolute;
-    left: 25%;
-    top: 14%;
+    left: 26.5%;
+    top: 35.5%;
     right: 0%;
     bottom: 0%;
-  }
-
-  .sortdiv {
-    padding: 0px;
   }
 
   #Compare {
     position: absolute;
     left: 45%;
-    top: 15%;
+    top: 38%;
     right: 0%;
     bottom: 0%;
+    cursor: pointer;
   }
    
   #Grid {
     position: absolute;
     left: 67%;
-    top: 16%;
+    top: 39%;
     right: 0%;
     bottom: 0%;
   }
@@ -277,13 +269,13 @@ body {
   #List {
     position: absolute;
     left: 86%;
+    top: 39%;
     right: 0%;
     bottom: 0%;
-    top: 17%;
   }
       
   .productsec  {
-    height: 180vh;
+    height: 190vh;
   }
 
   #productcolumn {
@@ -391,7 +383,7 @@ body {
     bottom: -10%;
     gap: 0px;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1.5fr;
+    grid-template-rows: repeat(8,1fr) 1.5fr;
   }
 
   .gridcolumn {
@@ -531,9 +523,58 @@ body {
     right: 8.7%;
   }
 
+  .productgrid {
+    position: relative;
+    display: grid;
+    left: 3%;
+    bottom: -2.5%;
+    gap: 3.5vh 0.5vw;
+    grid-template-columns: repeat(3, 22vw);
+    grid-template-rows: repeat(6, 25vh);
+  }
+
+  .product {
+    width: 21vw;
+  }
+
+  #break {
+    position: relative;
+    height: 10vh;
+    bottom: 1.3%;
+    background-color: #0e0e0e;
+  }
+
+  .break {
+    position: relative;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Garamond;
+    color: white;
+  }
+
+  .viewmore {
+    left: 58%;
+    bottom: -5vh;
+    width: 15vw;
+    border: 2px solid #d7ca89;
+    border-radius: 20px;
+    font-size: 18px;
+  }
+
+  .currentlyviewing {
+    left: 53.1%;
+    bottom: -5vh;
+    width: 25vw;
+    font-size: 12px;
+
+  }
+
   .bottomsec {
     position: relative;
     height: 60vh;
+    min-height: 60vh;
     background-color: black;
   }
 
@@ -641,6 +682,7 @@ body {
     bottom: 0%;
     height: 25vh;
     width: 18vw;
+    min-width: 280px;
   }
 
   #address {
@@ -657,3 +699,96 @@ body {
     bottom: auto;
     height: 10vh;
   }
+
+  #p4 {
+    cursor: pointer;
+  }
+
+  #p4:hover {
+    filter: brightness(80%);
+  }
+
+  /* comparison function */
+
+  .error {
+    overflow: hidden;
+    position: fixed;
+    top: 38vh;
+    left: 36vw;
+    z-index: 1;
+    padding-left: 2vw;
+    padding-top: 3vh;
+    display: none;
+    font-family: Garamond;
+    font-size: 22px;
+    color: #d7ca89;
+    background-color: #0e0e0e;
+    width: 22vw;
+    height: 15vh;
+    border-radius: 20px;
+    box-shadow: 0 0 0 100vmax rgb(0,0,0,.4);
+  }
+
+  .errorbutton {
+    font-family: Garamond;
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    left: 24%;
+    right: 0%;
+    top: auto;
+    bottom: 20%;
+    background-color: transparent;
+    border: 2px solid #d7ca89;
+    border-radius: 20px;
+    width: 12vw;
+    height: 5vh;
+    cursor: pointer;
+  }
+
+  .errorbutton:hover {
+    background-color: #d7ca89;
+  }
+
+  #one-car-selected {
+    display: none;
+    color: #d7ca89;
+  }
+
+  .none {
+    display: none;
+  }
+
+  #comparison-button {
+    display: none;
+  }
+
+  .comparisonbutton {
+    position: relative;
+    background-color: transparent;
+    border: 2px solid #d7ca89;
+    border-radius: 20px;
+    font-family: Garamond;
+    color: white;
+    font-size: 16px;
+    width: 6.5vw;
+    height: 4vh;
+    top: 25px;
+    cursor: pointer;
+  }
+
+  .comparisonbutton:hover {
+    background: #d7ca89;
+  }
+
+  .comparisonconfirm {
+    left: 3%;
+  }
+
+  .comparisoncancel {
+    left: 8%;
+  }
+
+
+  /* the end */
+  /* 

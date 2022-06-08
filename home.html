@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
-    <script type="module" src="index.js"></script>
+    <script type="module" src="map.js"></script>
+    <script src="compare.js"></script>
 </head> 
 <body class="body">
     <section class="navsec">
@@ -53,17 +54,21 @@
     </section>
     <section class="functionmenusec">
         <div class="functionmenu">
-            <div class="sortdropdown">
-                <div class="sortdiv">
-                    <img id="Sort" src="images/sort.svg" alt="sort">
-                </div>
-                <nav class="sortnav">
-    
-                </nav>
-            </div>
-            <img id="Compare" src="images/Compare.svg" alt="compare">
+            <img id="Sort" src="images/sort.svg" alt="sort">
+            <img id="Compare" src="images/Compare.svg" alt="compare" onclick="startComparison()">
             <img id="Grid" src="images/Grid.svg" alt="grid">
-            <img id="List" src="images/List.svg" alt="list" >
+            <img id="List" src="images/List.svg" alt="list" onclick="selectImages()">
+            <div id="comparison-button">
+                <button class="comparisonbutton comparisonconfirm" onclick="compareElements()">Confirm</button>
+                <button class="comparisonbutton comparisoncancel" onclick="closeComparison()">Cancel</button>
+            </div>
+        <div class="error" id="no-car-selected">
+            Select two more cars to compare
+            <button class="errorbutton" onclick="closeError()">Confirm</button>
+        </div>
+        <div class="error" id="one-car-selected">
+            Select one more car to compare
+            <button class="errorbutton" onclick="closeError()">Confirm</button>
         </div>
     </section>
     <section class="productsec">
@@ -172,12 +177,34 @@
                         <div class="category featuretext">Features</div>
                         <img class="categoryarrows featurearrow" src="images/Arrows.svg" alt="categoryarrows">
                     </div>
-                    
                 </div>
             </div>
             <div id="productcolumn-right">
-
+                <div class="productgrid">
+                    <div ><img class="product" id="p1" src="car images/p1.svg" alt="p1" onclick="selectImages(this.id)"></div>
+                    <div ><img class="product" src="car images/p2.svg" alt="p2"></div>
+                    <div ><img class="product" src="car images/p3.svg" alt="p3"></div>
+                    <div ><img class="product" id="p4" src="car images/p4.svg" alt="p4" onclick="selectImages(this.id)"></div>
+                    <div ><img class="product" src="car images/p5.svg" alt="p5"></div>
+                    <div ><img class="product" src="car images/p6.svg" alt="p6"></div>
+                    <div ><img class="product" src="car images/p1.svg" alt="p1"></div>
+                    <div ><img class="product" src="car images/p2.svg" alt="p2"></div>
+                    <div ><img class="product" src="car images/p3.svg" alt="p3"></div>
+                    <div ><img class="product" src="car images/p4.svg" alt="p4"></div>
+                    <div ><img class="product" src="car images/p5.svg" alt="p5"></div>
+                    <div ><img class="product" src="car images/p6.svg" alt="p6"></div>
+                    <div ><img class="product" src="car images/p1.svg" alt="p1"></div>
+                    <div ><img class="product" src="car images/p2.svg" alt="p2"></div>
+                    <div ><img class="product" src="car images/p3.svg" alt="p3"></div>
+                    <div ><img class="product" src="car images/p4.svg" alt="p4"></div>
+                    <div ><img class="product" src="car images/p5.svg" alt="p5"></div>
+                    <div ><img class="product" src="car images/p6.svg" alt="p6"></div>
+                </div>
             </div>
+        </div>
+        <div id="break">
+            <div class="break viewmore">View More Matches</div>
+            <div class="break currentlyviewing">Currently Viewing 18 of 2,345 Matches</div>
         </div>
     </section>
     <section class="bottomsec">
