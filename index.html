@@ -181,6 +181,8 @@
             </div>
             <div id="productcolumn-right">
                 <a href="product.html" id="productlink"></a>
+                <!-- I let it row autimatically so that I don't need to define all the areas in css. Downside is I need to somulate
+                the hover & conditional triggers by placing a invisible block on top of the car.-->
                 <div class="productgrid">
                     <div ><img class="product" id="p1" src="car images/p1.svg" alt="p1" onclick="selectImages(this.id)"></div>
                     <div ><img class="product" src="car images/p2.svg" alt="p2"></div>
@@ -209,6 +211,7 @@
         </div>
     </section>
     <section class="bottomsec">
+        <!-- google map api-->
         <div id="map"></div>
             <script
                 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6tHcHrwuDO00zWnrQVHvTnqyfbizuAvQ&callback=initMap&v=weekly"
@@ -233,6 +236,7 @@
             <div id="address">
                 Venice Blvd<br>Los Angeles, CA 90034<br>(424) 444-6030</div>
             </div>
+            <!-- flex justify doesn't work so I used nbsp for spacing-->  
             <div id="timetable">
                 Monday &ensp; &nbsp; 10:00AM - 7:00PM<br>Tuesday &ensp; &nbsp; 10:00AM - 7:00PM<br>Wednesday &nbsp; 10:00AM - 7:00PM<br>Thursday &ensp; &thinsp; 10:00AM - 7:00PM<br>Friday &ensp; &nbsp; &thinsp; 10:00AM - 7:00PM<br>Saturday &ensp; &nbsp; 10:00AM - 7:00PM<br>Sunday &ensp; &nbsp; &thinsp; 10:00AM - 7:00PM
             </div>

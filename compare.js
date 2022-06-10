@@ -30,6 +30,8 @@ function selectImages(elmID) {
   }
 }
 
+/*  error detection */
+
 function compareElements() {
   if (selectedImages.length === 0) {
     document.getElementById('no-car-selected').style.display = "block";
