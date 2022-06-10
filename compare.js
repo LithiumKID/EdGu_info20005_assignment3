@@ -6,6 +6,7 @@ function startComparison() {
   document.getElementById("Compare").style.display = "none";
   isComparisonSelected = true;
   document.getElementById("Sort").style.marginLeft="-40%";
+  document.getElementById("productlink").style.display = "none";
 }
 
 function closeComparison() {
@@ -17,6 +18,7 @@ function closeComparison() {
   });
   selectedImages = [];
   document.getElementById("Sort").style.marginLeft="0%";
+  document.getElementById("productlink").style.display = "block";
 }
 
 function selectImages(elmID) {

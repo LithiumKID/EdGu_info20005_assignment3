@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
-    <script type="module" src="map.js"></script>
+    <link rel="stylesheet" media="screen and (min-width: 320px) and (max-width: 479px)" href="main-mobile.css">
+    <script src="map.js"></script>
     <script src="compare.js"></script>
 </head> 
 <body class="body">
@@ -48,7 +49,6 @@
                 <div  id="SearchButton">
                     <p class="categorysearchtext-search">Search</p>
                 </div>
-
             </div>
         </div>
     </section>
@@ -180,6 +180,7 @@
                 </div>
             </div>
             <div id="productcolumn-right">
+                <a href="product.html" id="productlink"></a>
                 <div class="productgrid">
                     <div ><img class="product" id="p1" src="car images/p1.svg" alt="p1" onclick="selectImages(this.id)"></div>
                     <div ><img class="product" src="car images/p2.svg" alt="p2"></div>
